@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Quizz Nintendo</string>
+    <string name="apprendre">Apprendre</string>
+    <string name="titleListe">Liste des personnages</string>
+    <string name="origine">Origine :</string>
+    <string name="sexe">Sexe :</string>
+    <string name="espece">Espece :</string>
+    <string name="jouer">Jouer</string>
+</resources>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond"
+    tools:context="com.example.twinsty.personnagenintendo.Vue.Jouer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pseudo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    android:text="TextView"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="TextView"
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/fondlist"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/reponses"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/fondlist"
+                android:paddingBottom="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="20dp"
+                android:textAlignment="center">
+
+                <RadioButton
+                    android:id="@+id/r1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_weight="1"
+                    android:text="RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_weight="1"
+                    android:text="RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/r3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_weight="1"
+                    android:text="RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/r4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_weight="1"
+                    android:text="RadioButton"
+                    android:textAlignment="center" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/valider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/holo_green_light"
+                android:paddingBottom="30dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingTop="30dp"
+                android:text="Valider"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/radioButton"
+                app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+
+            <TextView
+                android:id="@+id/txtVerif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
